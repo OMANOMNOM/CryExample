@@ -4,3 +4,30 @@
 *.ptx
 *.cubin
 *.fatbin
+
+# Temporary files.
+*.log
+*.dmp
+*.pyo
+*.pyc
+*.bak
+*.bak2
+
+# Temporary directories.
+/[Bb]in*/
+/[Ss]olutions/*
+/[Ss]olutions_cmake/*
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]og[Bb]ackups
+/[Ll]ogs/
+/[Uu]ser*/
+/[Tt]emp/
+/[Ee]ditor/
+/rc_out_PC_pure/
+/*_package/
+
+# Code Editors
+.idea/
+.vscode/
+.vs/
