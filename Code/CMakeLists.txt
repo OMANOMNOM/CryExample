@@ -36,6 +36,16 @@ add_sources("Blank Component_uber.cpp"
 		"Components/Blank Component/BlankComponent.cpp"
 		"Components/Blank Component/BlankComponent.h"
 )
+add_sources("Simple Entities_uber.cpp"
+    PROJECTS Game
+    SOURCE_GROUP "Components\\\\Simple Entities"
+)
+add_sources("Events_uber.cpp"
+    PROJECTS Game
+    SOURCE_GROUP "Components\\\\Simple Entities\\\\Events"
+		"Components/Simple Entities/Events/EntityEvents.cpp"
+		"Components/Simple Entities/Events/EntityEvents.h"
+)
 
 if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/CVarOverrides.h")
     add_sources("NoUberFile"
