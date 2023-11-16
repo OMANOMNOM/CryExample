@@ -9,6 +9,12 @@ An easy to use CRYENGINE game project containing example code for how to use var
 - Each Feature is explained within its own Entity Component (GameObject)
 
 
+## Getting Started
+
+Todo
+
+## Using ExampleEntities
+
 
 
 
