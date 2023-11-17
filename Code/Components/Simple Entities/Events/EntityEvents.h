@@ -22,7 +22,7 @@ public:
 	static void ReflectType(Schematyc::CTypeDesc<CEntityEventsComponent>& desc)
 	{
 		desc.SetGUID("{174B2D8F-2B15-4BF1-8091-505049307B39}"_cry_guid);
-		desc.SetEditorCategory("EntityEventsComponent");
+		desc.SetEditorCategory("CryExample Entity");
 		desc.SetLabel("Entity Events Component");
 	}
 

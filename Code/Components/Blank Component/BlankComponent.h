@@ -22,7 +22,7 @@ public:
 		// Provide a globally unique identifier for the component, can be generated in Visual Studio via Tools -> Create GUID (in registry format).
 		desc.SetGUID("{2AEF0B0A-B12E-4286-9B7B-A032277F93CA}"_cry_guid);
 		// These set the label and categogory in the editor interface. 
-		desc.SetEditorCategory("BlankComponentCategory");
+		desc.SetEditorCategory("CryExample Entity");
 		desc.SetLabel("BlankComponent");
 	}
 };
