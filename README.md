@@ -1,4 +1,5 @@
-# CryExampleCode
+# CryExample
+
 
 An easy to use CRYENGINE game project containing example code for how to use various engine features. 
 
