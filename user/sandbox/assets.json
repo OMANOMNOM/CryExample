@@ -5103,7 +5103,7 @@
 			"type": "Level",
 			"guid": "8691fc6a-9e2b-f5b4-3613-d6ba72915511",
 			"name": "example",
-			"timestamp": 1652893774,
+			"timestamp": 1700580200,
 			"files": [ "Levels/example/example.level" ],
 			"workFiles": [ ],
 			"source": "",
@@ -5111,9 +5111,10 @@
 			"details": [ ],
 			"dependencies": [
 				{ "path": "%editor%/objects/envcube.cgf", "usageCount": 0 },
-				{ "path": "%editor%/objects/envcube.mtl", "usageCount": 0 },
-				{ "path": "%editor%/objects/mtlobjects.mtl", "usageCount": 0 },
-				{ "path": "%editor%/objects/mtlsphere.cgf", "usageCount": 0 },
+				{
+					"path": "%engine%/config/defaultscripts/compressionpolicy.xml",
+					"usageCount": 0
+				},
 				{
 					"path": "%engine%/engineassets/icons/averagememoryusage.dds",
 					"usageCount": 0
@@ -5131,43 +5132,7 @@
 					"usageCount": 0
 				},
 				{
-					"path": "%engine%/engineassets/materials/fog/fogvolumebox.mtl",
-					"usageCount": 0
-				},
-				{
-					"path": "%engine%/engineassets/materials/fog/fogvolumeellipsoid.mtl",
-					"usageCount": 0
-				},
-				{
-					"path": "%engine%/engineassets/materials/fog/oceaninto.mtl",
-					"usageCount": 0
-				},
-				{
-					"path": "%engine%/engineassets/materials/fog/oceanintolowspec.mtl",
-					"usageCount": 0
-				},
-				{
-					"path": "%engine%/engineassets/materials/fog/oceanoutof.mtl",
-					"usageCount": 0
-				},
-				{
-					"path": "%engine%/engineassets/materials/fog/oceanoutoflowspec.mtl",
-					"usageCount": 0
-				},
-				{
 					"path": "%engine%/engineassets/materials/material_default.mtl",
-					"usageCount": 0
-				},
-				{
-					"path": "%engine%/engineassets/materials/material_terrain_default.mtl",
-					"usageCount": 0
-				},
-				{
-					"path": "%engine%/engineassets/materials/water/wateroceanbottom.mtl",
-					"usageCount": 0
-				},
-				{
-					"path": "%engine%/engineassets/objects/editorprimitive.mtl",
 					"usageCount": 0
 				},
 				{
@@ -5175,57 +5140,12 @@
 					"usageCount": 0
 				},
 				{
-					"path": "%engine%/engineassets/objects/primitive_sphere.cgf",
-					"usageCount": 0
-				},
-				{
-					"path": "%engine%/engineassets/texturemsg/defaultnouvs.dds",
-					"usageCount": 0
-				},
-				{
 					"path": "%engine%/engineassets/texturemsg/defaultsolids.mtl",
 					"usageCount": 0
 				},
-				{
-					"path": "%engine%/engineassets/textures/defaults/16_12.dds",
-					"usageCount": 0
-				},
-				{
-					"path": "%engine%/engineassets/textures/defaults/16_34.dds",
-					"usageCount": 0
-				},
-				{
-					"path": "%engine%/engineassets/textures/defaults/16_5.dds",
-					"usageCount": 0
-				},
-				{
-					"path": "%engine%/engineassets/textures/defaults/16_grey.dds",
-					"usageCount": 0
-				},
 				{ "path": "%engine%/engineassets/textures/white.dds", "usageCount": 0 },
-				{ "path": "engineassets/materials/sky/sky.mtl", "usageCount": 0 },
-				{
-					"path": "engineassets/materials/water/ocean_default.mtl",
-					"usageCount": 0
-				},
-				{ "path": "engineassets/texturemsg/defaultnouvs.dds", "usageCount": 0 },
-				{
-					"path": "engineassets/textures/skys/night/half_moon.dds",
-					"usageCount": 0
-				},
-				{ "path": "engineassets/textures/white.dds", "usageCount": 0 },
-				{ "path": "libs/environmentpresets/example.xml", "usageCount": 0 },
-				{ "path": "materials/bullet.mtl", "usageCount": 0 },
-				{ "path": "materials/terrain.mtl", "usageCount": 0 },
-				{ "path": "scripts/ai/factions.xml", "usageCount": 0 },
-				{
-					"path": "textures/cubemaps/example/environmentprobe1_cm.dds",
-					"usageCount": 0
-				},
-				{
-					"path": "textures/cubemaps/example/environmentprobe1_cm_diff.dds",
-					"usageCount": 0
-				}
+				{ "path": "libs/environmentpresets/example.env", "usageCount": 1 },
+				{ "path": "scripts/network/compressionpolicy.xml", "usageCount": 0 }
 			]
 		},
 		{
