@@ -1,5 +1,5 @@
 # CryExample
-![CryExample-logos](https://github.com/OMANOMNOM/CryExample/assets/7152569/9e99b3dc-58ab-45fd-9764-a0b44d21d01d)
+![CryExample-logos_Cropped](https://github.com/OMANOMNOM/CryExample/assets/7152569/db2edcf2-f102-4cd9-8df6-3b829db24ab1)
 
 
 An easy to use CRYENGINE game project containing example code for how to use various engine features. 
