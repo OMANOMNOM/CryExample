@@ -32,7 +32,7 @@ public:
 
 		// -------------------- Editor reflected varaibles --------------------
 		// Here we can specify component varaiables we wish to view and change within the sandbox. No programming required (after being specified in code already)
-		desc.AddMember(&CSimpleComponentProperty::m_importantValue, 'impv', "Important Value", "Important Value", "This is an example variable we can change in the editor", ZERO);
+		desc.AddMember(&CSimpleComponentProperty::m_importantValue, 'impv', "ImportantValue", "Important Value", "This is an example variable we can change in the editor", ZERO);
 
 
 	}

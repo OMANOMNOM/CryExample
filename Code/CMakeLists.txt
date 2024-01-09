@@ -40,11 +40,35 @@ add_sources("Simple Entities_uber.cpp"
     PROJECTS Game
     SOURCE_GROUP "Components\\\\Simple Entities"
 )
+add_sources("EditorVariables_uber.cpp"
+    PROJECTS Game
+    SOURCE_GROUP "Components\\\\Simple Entities\\\\EditorVariables"
+		"Components/Simple Entities/EditorVariables/SimpleComponentProperty.cpp"
+		"Components/Simple Entities/EditorVariables/SimpleComponentProperty.h"
+)
+add_sources("GroupedComponentProperties_uber.cpp"
+    PROJECTS Game
+    SOURCE_GROUP "Components\\\\Simple Entities\\\\EditorVariables\\\\GroupedComponentProperties"
+		"Components/Simple Entities/EditorVariables/GroupedComponentProperties/GroupedComponentProperties.cpp"
+		"Components/Simple Entities/EditorVariables/GroupedComponentProperties/GroupedComponentProperties.h"
+)
+add_sources("MoreComponentProperties_uber.cpp"
+    PROJECTS Game
+    SOURCE_GROUP "Components\\\\Simple Entities\\\\EditorVariables\\\\MoreComponentProperties"
+		"Components/Simple Entities/EditorVariables/MoreComponentProperties/SimpleComponentProperty.cpp"
+		"Components/Simple Entities/EditorVariables/MoreComponentProperties/SimpleComponentProperty.h"
+)
 add_sources("Events_uber.cpp"
     PROJECTS Game
     SOURCE_GROUP "Components\\\\Simple Entities\\\\Events"
 		"Components/Simple Entities/Events/EntityEvents.cpp"
 		"Components/Simple Entities/Events/EntityEvents.h"
+)
+add_sources("Timers_uber.cpp"
+    PROJECTS Game
+    SOURCE_GROUP "Components\\\\Simple Entities\\\\Timers"
+		"Components/Simple Entities/Timers/TimerComponent.cpp"
+		"Components/Simple Entities/Timers/TimerComponent.h"
 )
 
 if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/CVarOverrides.h")

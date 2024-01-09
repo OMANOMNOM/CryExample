@@ -1,0 +1,88 @@
+<CrySchematyc CryXmlVersion="2" version="105" guid="cf2ce3b1-ce27-43b0-a301-4366e3250aa7" scope="">
+ <root elementType="Class" guid="6aae7e24-37aa-4e15-b090-9c4b9041fef4" name="schematycfunctionexample" Schematyc::EMPEnv="clientserver">
+  <userDocumentation author="jonat" description=""/>
+  <extensions />
+  <children>
+   <element elementType="Constructor" guid="32f43c31-35ee-4224-87d2-efa65db0212c" name="ConstructionGraph" Schematyc::EMPEnv="clientserver">
+    <userDocumentation author="jonat" description=""/>
+    <extensions>
+     <Graph>
+      <pos x="0" y="0"/>
+      <nodes>
+       <element key="7caa32d1-b3ef-406b-bf13-de5f9c212c05" typeGUID="12bdfa06-ba95-4e48-bb2d-bb48a7080abc">
+        <value guid="7caa32d1-b3ef-406b-bf13-de5f9c212c05">
+         <pos x="0" y="0"/>
+        </value>
+       </element>
+      </nodes>
+      <links />
+     </Graph>
+    </extensions>
+    <children />
+   </element>
+   <element elementType="SignalReceiver" guid="9c19906e-1aa6-416d-a0fc-660e8a893975" name="SignalGraph" Schematyc::EMPEnv="clientserver" type="Universal" signalGUID="">
+    <userDocumentation author="jonat" description=""/>
+    <extensions>
+     <Graph>
+      <pos x="0" y="0"/>
+      <nodes>
+       <element key="ddd9f5b0-84ba-42b7-b7dd-0d249d6992f5" typeGUID="ad2aee64-0a60-4469-8ec7-38b4b720d30c">
+        <value guid="ddd9f5b0-84ba-42b7-b7dd-0d249d6992f5" objectGUID="">
+         <pos x="0" y="100"/>
+         <signalId domain="Env" guid="52ad5add-7781-429b-b4a9-0cb6c905e353"/>
+        </value>
+       </element>
+       <element key="12685f0f-c237-45cc-a5c9-9db6801d4e22" typeGUID="1bcfd811-b8b7-4032-a90c-311dfa4454c6">
+        <value guid="12685f0f-c237-45cc-a5c9-9db6801d4e22" objectGUID="884180bc-87c1-4ec1-882c-405cf250835b">
+         <pos x="192" y="2"/>
+         <functionId domain="Env" guid="2d222625-98f1-4605-ade1-800245c6d924"/>
+         <inputs>
+          <element value="false">
+           <key type="UInt32" value="1701732706"/>
+          </element>
+         </inputs>
+        </value>
+       </element>
+       <element key="b7498997-1a0e-46db-b98c-34839007c79b" typeGUID="ad2aee64-0a60-4469-8ec7-38b4b720d30c">
+        <value guid="b7498997-1a0e-46db-b98c-34839007c79b" objectGUID="">
+         <pos x="0" y="0"/>
+         <signalId domain="Env" guid="a9279137-7c66-491d-b9a0-8752c24c8979"/>
+        </value>
+       </element>
+       <element key="eab53a83-c756-4c77-9bee-34ba6e0bee8c" typeGUID="ad2aee64-0a60-4469-8ec7-38b4b720d30c">
+        <value guid="eab53a83-c756-4c77-9bee-34ba6e0bee8c" objectGUID="">
+         <pos x="0" y="200"/>
+         <signalId domain="Env" guid="b2561caa-0753-458b-a91f-e8e38b0f0cdf"/>
+        </value>
+       </element>
+      </nodes>
+      <links>
+       <element srcNodeGUID="b7498997-1a0e-46db-b98c-34839007c79b" dstNodeGUID="12685f0f-c237-45cc-a5c9-9db6801d4e22">
+        <srcOutputId type="Idx" value="0"/>
+        <dstInputId type="Idx" value="0"/>
+       </element>
+      </links>
+     </Graph>
+    </extensions>
+    <children />
+   </element>
+   <element elementType="Base" guid="d272026b-91c7-40d3-9c02-71f8fd44c057" name="Base [Entity]" Schematyc::EMPEnv="clientserver">
+    <classId domain="Env" guid="be845278-0dd2-409f-b8be-97895607c256"/>
+    <envClassProperties icon="%EDITOR%/objecticons/schematyc.bmp" bHideInEditor="false" bTriggerAreas="true" bCreatePerClient="false"/>
+    <extensions />
+    <children>
+     <element elementType="ComponentInstance" guid="602db3b7-e1fe-482f-9bda-f800caf10e04" name="Entity" Schematyc::EMPEnv="clientserver" accessor="Private" typeGUID="e88093df-904f-4c52-af38-911e26777cdc">
+      <properties />
+      <extensions />
+      <children />
+     </element>
+    </children>
+   </element>
+   <element elementType="ComponentInstance" guid="884180bc-87c1-4ec1-882c-405cf250835b" name="Schematyc Function" Schematyc::EMPEnv="clientserver" accessor="Private" typeGUID="3fa6c213-274a-40ac-9947-94deecf2645b">
+    <properties />
+    <extensions />
+    <children />
+   </element>
+  </children>
+ </root>
+</CrySchematyc>

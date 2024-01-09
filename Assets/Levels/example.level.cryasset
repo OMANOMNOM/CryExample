@@ -1,19 +1,27 @@
-<AssetMetadata version="0" type="Level" guid="8691fc6a-9e2b-f5b4-3613-d6ba72915511" source="" timestamp="1700580200">
+<AssetMetadata version="0" type="Level" guid="a1bdf541-86c1-dbd1-a37f-16f592760dc1" source="" timestamp="1704833599">
  <Files>
   <File path="example/example.level"/>
  </Files>
  <Dependencies>
-  <Path>%editor%/objects/envcube.cgf</Path>
-  <Path>%engine%/config/defaultscripts/compressionpolicy.xml</Path>
+  <Path usageCount="1">%ENGINE%/EngineAssets/Shading/default.env</Path>
   <Path>%engine%/engineassets/icons/averagememoryusage.dds</Path>
   <Path>%engine%/engineassets/icons/highmemoryusage.dds</Path>
   <Path>%engine%/engineassets/icons/livepreview.dds</Path>
   <Path>%engine%/engineassets/icons/lowmemoryusage.dds</Path>
-  <Path>%engine%/engineassets/materials/material_default.mtl</Path>
-  <Path>%engine%/engineassets/objects/primitive_cube.cgf</Path>
+  <Path>%engine%/engineassets/materials/fog/fogvolumebox.mtl</Path>
+  <Path>%engine%/engineassets/materials/fog/fogvolumeellipsoid.mtl</Path>
+  <Path>%engine%/engineassets/materials/fog/oceaninto.mtl</Path>
+  <Path>%engine%/engineassets/materials/fog/oceanintolowspec.mtl</Path>
+  <Path>%engine%/engineassets/materials/fog/oceanoutof.mtl</Path>
+  <Path>%engine%/engineassets/materials/fog/oceanoutoflowspec.mtl</Path>
+  <Path>%engine%/engineassets/materials/material_terrain_default.mtl</Path>
+  <Path>%engine%/engineassets/materials/water/ocean_default.mtl</Path>
+  <Path>%engine%/engineassets/materials/water/wateroceanbottom.mtl</Path>
+  <Path>%engine%/engineassets/objects/primitive_sphere.cgf</Path>
+  <Path>%engine%/engineassets/texturemsg/defaultnouvs.dds</Path>
   <Path>%engine%/engineassets/texturemsg/defaultsolids.mtl</Path>
-  <Path>%engine%/engineassets/textures/white.dds</Path>
-  <Path usageCount="1">libs/environmentpresets/example.env</Path>
-  <Path>scripts/network/compressionpolicy.xml</Path>
+  <Path>%engine%/engineassets/textures/grey.dds</Path>
+  <Path>%engine%/engineassets/textures/skys/night/half_moon.dds</Path>
+  <Path>scripts/ai/factions.xml</Path>
  </Dependencies>
 </AssetMetadata>

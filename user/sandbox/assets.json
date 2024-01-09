@@ -5101,19 +5101,18 @@
 		},
 		{
 			"type": "Level",
-			"guid": "8691fc6a-9e2b-f5b4-3613-d6ba72915511",
+			"guid": "a1bdf541-86c1-dbd1-a37f-16f592760dc1",
 			"name": "example",
-			"timestamp": 1700580200,
+			"timestamp": 1704833599,
 			"files": [ "Levels/example/example.level" ],
 			"workFiles": [ ],
 			"source": "",
 			"metadata": "Levels/example.level.cryasset",
 			"details": [ ],
 			"dependencies": [
-				{ "path": "%editor%/objects/envcube.cgf", "usageCount": 0 },
 				{
-					"path": "%engine%/config/defaultscripts/compressionpolicy.xml",
-					"usageCount": 0
+					"path": "%ENGINE%/EngineAssets/Shading/default.env",
+					"usageCount": 1
 				},
 				{
 					"path": "%engine%/engineassets/icons/averagememoryusage.dds",
@@ -5132,51 +5131,66 @@
 					"usageCount": 0
 				},
 				{
-					"path": "%engine%/engineassets/materials/material_default.mtl",
+					"path": "%engine%/engineassets/materials/fog/fogvolumebox.mtl",
 					"usageCount": 0
 				},
 				{
-					"path": "%engine%/engineassets/objects/primitive_cube.cgf",
+					"path": "%engine%/engineassets/materials/fog/fogvolumeellipsoid.mtl",
+					"usageCount": 0
+				},
+				{
+					"path": "%engine%/engineassets/materials/fog/oceaninto.mtl",
+					"usageCount": 0
+				},
+				{
+					"path": "%engine%/engineassets/materials/fog/oceanintolowspec.mtl",
+					"usageCount": 0
+				},
+				{
+					"path": "%engine%/engineassets/materials/fog/oceanoutof.mtl",
+					"usageCount": 0
+				},
+				{
+					"path": "%engine%/engineassets/materials/fog/oceanoutoflowspec.mtl",
+					"usageCount": 0
+				},
+				{
+					"path": "%engine%/engineassets/materials/material_terrain_default.mtl",
+					"usageCount": 0
+				},
+				{
+					"path": "%engine%/engineassets/materials/water/ocean_default.mtl",
+					"usageCount": 0
+				},
+				{
+					"path": "%engine%/engineassets/materials/water/wateroceanbottom.mtl",
+					"usageCount": 0
+				},
+				{
+					"path": "%engine%/engineassets/objects/primitive_sphere.cgf",
+					"usageCount": 0
+				},
+				{
+					"path": "%engine%/engineassets/texturemsg/defaultnouvs.dds",
 					"usageCount": 0
 				},
 				{
 					"path": "%engine%/engineassets/texturemsg/defaultsolids.mtl",
 					"usageCount": 0
 				},
-				{ "path": "%engine%/engineassets/textures/white.dds", "usageCount": 0 },
-				{ "path": "libs/environmentpresets/example.env", "usageCount": 1 },
-				{ "path": "scripts/network/compressionpolicy.xml", "usageCount": 0 }
+				{ "path": "%engine%/engineassets/textures/grey.dds", "usageCount": 0 },
+				{
+					"path": "%engine%/engineassets/textures/skys/night/half_moon.dds",
+					"usageCount": 0
+				},
+				{ "path": "scripts/ai/factions.xml", "usageCount": 0 }
 			]
-		},
-		{
-			"type": "Xml",
-			"guid": "6be4ff4e-218c-0819-2e83-66b21610985d",
-			"name": "filelist",
-			"timestamp": 1652893774,
-			"files": [ "Levels/example/filelist.xml" ],
-			"workFiles": [ ],
-			"source": "",
-			"metadata": "Levels/example/filelist.xml.cryasset",
-			"details": [ { "key": "rootTag", "value": "download" } ],
-			"dependencies": [ ]
-		},
-		{
-			"type": "Xml",
-			"guid": "2e602e0e-809e-d277-df87-425931463c4b",
-			"name": "Environment",
-			"timestamp": 1652893774,
-			"files": [ "Levels/example/leveldata/Environment.xml" ],
-			"workFiles": [ ],
-			"source": "",
-			"metadata": "Levels/example/leveldata/Environment.xml.cryasset",
-			"details": [ { "key": "rootTag", "value": "Environment" } ],
-			"dependencies": [ ]
 		},
 		{
 			"type": "Xml",
 			"guid": "ada258c5-e1a1-f5d4-d5cc-43232a4e5685",
 			"name": "defaultprofile",
-			"timestamp": 1652893775,
+			"timestamp": 1704829238,
 			"files": [ "Libs/config/defaultprofile.xml" ],
 			"workFiles": [ ],
 			"source": "",
@@ -5188,7 +5202,7 @@
 			"type": "Xml",
 			"guid": "0a479031-4c4f-dc8e-f29f-bd30253104d7",
 			"name": "actionmaps",
-			"timestamp": 1652893774,
+			"timestamp": 1704829238,
 			"files": [ "Libs/config/Profiles/default/actionmaps.xml" ],
 			"workFiles": [ ],
 			"source": "",
@@ -5200,7 +5214,7 @@
 			"type": "Xml",
 			"guid": "b2693be9-6d39-5a82-0395-724059521af6",
 			"name": "attributes",
-			"timestamp": 1652893774,
+			"timestamp": 1704829238,
 			"files": [ "Libs/config/Profiles/default/attributes.xml" ],
 			"workFiles": [ ],
 			"source": "",
@@ -5212,7 +5226,7 @@
 			"type": "Xml",
 			"guid": "a03c3894-bd4f-3c53-2137-a9ab81ab8fae",
 			"name": "levelrotation",
-			"timestamp": 1652893775,
+			"timestamp": 1704829238,
 			"files": [ "Libs/config/Profiles/default/levelrotation/levelrotation.xml" ],
 			"workFiles": [ ],
 			"source": "",
@@ -5224,7 +5238,7 @@
 			"type": "Xml",
 			"guid": "33738faf-1b66-df24-3b3e-f8b9e08e39d6",
 			"name": "profile",
-			"timestamp": 1652893775,
+			"timestamp": 1704829238,
 			"files": [ "Libs/config/Profiles/default/profile.xml" ],
 			"workFiles": [ ],
 			"source": "",
@@ -5236,7 +5250,7 @@
 			"type": "Environment",
 			"guid": "074b3609-f7f1-6ba1-2f60-d820619f4714",
 			"name": "example",
-			"timestamp": 1699921116,
+			"timestamp": 1704829238,
 			"files": [ "Libs/environmentpresets/example.env" ],
 			"workFiles": [ ],
 			"source": "",
@@ -5248,7 +5262,7 @@
 			"type": "Xml",
 			"guid": "b32bb546-0bc6-37c1-36f5-50c25ae1af87",
 			"name": "example",
-			"timestamp": 1652893775,
+			"timestamp": 1704829238,
 			"files": [ "Libs/environmentpresets/example.xml" ],
 			"workFiles": [ ],
 			"source": "",
@@ -5260,7 +5274,7 @@
 			"type": "Xml",
 			"guid": "2c850ff8-2d59-b93f-5a3e-2e973b06a443",
 			"name": "FlownodeBlacklist",
-			"timestamp": 1652893775,
+			"timestamp": 1704829238,
 			"files": [ "Libs/flownodes/FlownodeBlacklist.xml" ],
 			"workFiles": [ ],
 			"source": "",
@@ -5272,7 +5286,7 @@
 			"type": "Xml",
 			"guid": "2f35294b-3975-3baf-b5e8-f22d565329d7",
 			"name": "Substitutions",
-			"timestamp": 1652893775,
+			"timestamp": 1704829238,
 			"files": [ "Libs/flownodes/Substitutions.xml" ],
 			"workFiles": [ ],
 			"source": "",
@@ -5281,10 +5295,22 @@
 			"dependencies": [ ]
 		},
 		{
+			"type": "SchematycEntity",
+			"guid": "dc335f0f-8308-10b5-bc03-6acc7809a4f0",
+			"name": "schematycfunctionexample",
+			"timestamp": 1704834324,
+			"files": [ "objects/schematyc/schematycfunctionexample.schematyc_ent" ],
+			"workFiles": [ ],
+			"source": "",
+			"metadata": "objects/schematyc/schematycfunctionexample.schematyc_ent.cryasset",
+			"details": [ ],
+			"dependencies": [ ]
+		},
+		{
 			"type": "Xml",
 			"guid": "27b9c747-ce05-c9ec-00bf-c57cc860247c",
 			"name": "Factions",
-			"timestamp": 1652893775,
+			"timestamp": 1704829238,
 			"files": [ "Scripts/AI/Factions.xml" ],
 			"workFiles": [ ],
 			"source": "",
@@ -5296,7 +5322,7 @@
 			"type": "Xml",
 			"guid": "0464db73-3a60-0239-e1ed-adeeb78039b6",
 			"name": "GameObjectSerializationOrder",
-			"timestamp": 1652893775,
+			"timestamp": 1704829238,
 			"files": [ "Scripts/GameObjectSerializationOrder.xml" ],
 			"workFiles": [ ],
 			"source": "",
@@ -5308,7 +5334,7 @@
 			"type": "Xml",
 			"guid": "4b3031b7-0e07-f5ae-1e4a-b2be67dccad4",
 			"name": "CompressionPolicy",
-			"timestamp": 1652893775,
+			"timestamp": 1704829238,
 			"files": [ "Scripts/network/CompressionPolicy.xml" ],
 			"workFiles": [ ],
 			"source": "",
@@ -5320,7 +5346,7 @@
 			"type": "Xml",
 			"guid": "67a504c7-1ae4-d7fa-7a1b-713322affa98",
 			"name": "EntityScheduler",
-			"timestamp": 1652893775,
+			"timestamp": 1704829238,
 			"files": [ "Scripts/network/EntityScheduler.xml" ],
 			"workFiles": [ ],
 			"source": "",
@@ -5332,7 +5358,7 @@
 			"type": "Xml",
 			"guid": "0277c3a3-a0e9-b406-b607-a25b6e550c58",
 			"name": "Scheduler",
-			"timestamp": 1652893775,
+			"timestamp": 1704829238,
 			"files": [ "Scripts/network/Scheduler.xml" ],
 			"workFiles": [ ],
 			"source": "",
@@ -5344,7 +5370,7 @@
 			"type": "Texture",
 			"guid": "71ef1138-c48b-93ee-93ea-1c2c3e1ec2ec",
 			"name": "environmentprobe1_cm",
-			"timestamp": 1652893775,
+			"timestamp": 1704829238,
 			"files": [ "Textures/cubemaps/example/environmentprobe1_cm.dds" ],
 			"workFiles": [ ],
 			"source": "",
@@ -5360,7 +5386,7 @@
 			"type": "Texture",
 			"guid": "2baff56a-fa3f-4815-4471-624ee23da4e9",
 			"name": "environmentprobe1_cm_diff",
-			"timestamp": 1652893775,
+			"timestamp": 1704829238,
 			"files": [ "Textures/cubemaps/example/environmentprobe1_cm_diff.dds" ],
 			"workFiles": [ ],
 			"source": "",
