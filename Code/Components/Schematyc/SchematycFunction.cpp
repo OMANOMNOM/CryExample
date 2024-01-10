@@ -1,26 +1,14 @@
-#include "StdAfx.h" //Required in all classes to speed up compile
+#include "StdAfx.h"
 #include "Components/Schematyc/SchematycFunction.h"
-
 #include <CrySchematyc/Env/IEnvRegistrar.h>
 #include <CrySchematyc/Env/Elements/EnvComponent.h>
 #include <CryCore/StaticInstanceList.h>
 
 
-//
-// 
-// 
-
+// Include required for Schematyc function nodes 
 #include <CrySchematyc/Env/Elements/EnvFunction.h>
 
-// ------------ Not sure you need these for a simple entity ------------
-//#include <CrySchematyc/Reflection/TypeDesc.h>
-//#include <CrySchematyc/Utils/EnumFlags.h>
-//#include <CrySchematyc/Env/IEnvRegistry.h>
-//#include <CrySchematyc/Env/Elements/EnvFunction.h>
-//#include <CrySchematyc/Env/Elements/EnvSignal.h>
-//#include <CrySchematyc/ResourceTypes.h>
-//#include <CrySchematyc/MathTypes.h>
-//#include <CrySchematyc/Utils/SharedString.h>
+
 
 // Makes the component 'editable' within the CE editor. 
 static void RegisterSchematycFunction(Schematyc::IEnvRegistrar& registrar)
@@ -30,6 +18,7 @@ static void RegisterSchematycFunction(Schematyc::IEnvRegistrar& registrar)
 		Schematyc::CEnvRegistrationScope componentScope = scope.Register(SCHEMATYC_MAKE_ENV_COMPONENT(CSchematycFunction));
 
 		{
+			// Here we reflect our Schematyc funciton node.
 			auto const pFunction = SCHEMATYC_MAKE_ENV_FUNCTION(&CSchematycFunction::SetEnabled, "{2D222625-98F1-4605-ADE1-800245C6D924}"_cry_guid, "Set Enabled");
 			pFunction->SetDescription("Controls whether the spawner is enabled during runtime.");
 			pFunction->SetFlags({ Schematyc::EEnvFunctionFlags::Member });
@@ -42,19 +31,20 @@ static void RegisterSchematycFunction(Schematyc::IEnvRegistrar& registrar)
 
 CRY_STATIC_AUTO_REGISTER_FUNCTION(&RegisterSchematycFunction)
 
+/// <summary>
+/// This is our example funciton that can use schematyc to call C++ code. 
+/// </summary>
+/// <param name="enable"></param>
 void CSchematycFunction::SetEnabled(const bool& enable)
 {
 
-	// Executer our bit of code
-
-	/*m_enabled = enable;
-
+	 //Executer our bit of code
 	if (enable)
 	{
-		StartTimers();
+		CryLog("Schematyc has called a C++ funciton and the argument is true");
 	}
 	else
 	{
-		StopTimers();
-	}*/
+		CryLog("Schematyc has called a C++ funciton and the argument is false");
+	}
 }

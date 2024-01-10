@@ -5307,6 +5307,18 @@
 			"dependencies": [ ]
 		},
 		{
+			"type": "SchematycEntity",
+			"guid": "ed241758-9c57-18b7-93fb-b52c8abd3a47",
+			"name": "schematycsignalexample",
+			"timestamp": 1704836084,
+			"files": [ "objects/schematyc/schematycsignalexample.schematyc_ent" ],
+			"workFiles": [ ],
+			"source": "",
+			"metadata": "objects/schematyc/schematycsignalexample.schematyc_ent.cryasset",
+			"details": [ ],
+			"dependencies": [ ]
+		},
+		{
 			"type": "Xml",
 			"guid": "27b9c747-ce05-c9ec-00bf-c57cc860247c",
 			"name": "Factions",

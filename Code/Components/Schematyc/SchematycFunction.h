@@ -1,15 +1,11 @@
 #pragma once
-/*
-	Minimum code for a blank entity component which is visable within the Editor
-	1. Change all instances of CBlankComponent AND BlankComponent to a name of your choice.
-	2. Don't forget to change the filenames and the include in the .cpp file too
-	3. Generate a new GUID (https://docs.cryengine.com/display/CEPROG/Components)
-*/
-#pragma once
 
 #include <CryEntitySystem/IEntitySystem.h>
 
-class CSchematycFunction final : public IEntityComponent // Best practice: Classes start with a 'C'
+/// <summary>
+/// Demonstrates how to Create a Schematyc Function node for the entity. (C++ function callable from schematyc)
+/// </summary>
+class CSchematycFunction final : public IEntityComponent
 
 {
 public:
@@ -27,5 +23,6 @@ public:
 		desc.SetLabel("Schematyc Function");
 	}
 
+	// Our function which we can call from schematyc
 	void SetEnabled(const bool& enable);
 };
