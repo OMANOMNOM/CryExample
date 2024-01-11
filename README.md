@@ -15,16 +15,25 @@ An easy to use CRYENGINE game project containing example code for how to use var
 
 You're going to need to already have downloaded and installed CRYENGINE AND installed Visual Studio + Associated C++ tools. (Watch this if unsure). 
 
-* Download and unzip the project.
-* Right click and select Generate Solution
-* Navigate to the Solutions->Win64 and open up Game.sln (This should open Visual studio)
-* In the Solutions panel (right side of screen) Right click Editor and click "Set as startup Project"
-* Press CTRL+Shift+B to build the solution.
-* Fianlly press F5 to load up the editor and see the components at work.
-* All the demonstation code with within the project file is the soluiton panel (right hand side)
+1. Download and unzip the project.
+2. Right click and select Generate Solution
+3. Navigate to the Solutions->Win64 and open up Game.sln (This should open Visual studio)
+4. In the Solutions panel (right side of screen) Right click Editor and click "Set as startup Project"
+5. Press CTRL+Shift+B to build the solution.
+6. Fianlly press F5 to load up the editor and see the components at work.
+7. All the demonstation code with within the project file is the soluiton panel (right hand side)
 
 ## Using ExampleEntities
 
+Todo
 
+## Current Topics
+
+- Blank Game Objects
+- Timers
+- Events
+- Physics (todo)
+- Schematyc Integrations with C++
+- Shaders (todo)
 
 
