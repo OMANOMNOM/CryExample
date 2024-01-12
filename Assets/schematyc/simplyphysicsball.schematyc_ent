@@ -1,0 +1,98 @@
+<CrySchematyc CryXmlVersion="2" version="105" guid="6d5fdded-712c-435f-a963-7c52cdd8fea0" scope="">
+ <root elementType="Class" guid="b85fe010-1c82-41b4-a39b-f3d0d817ee68" name="simplyphysicsball" Schematyc::EMPEnv="clientserver">
+  <userDocumentation author="jonat" description=""/>
+  <extensions />
+  <children>
+   <element elementType="Constructor" guid="660753d2-54fe-4fb1-8c22-df75ef95a167" name="ConstructionGraph" Schematyc::EMPEnv="clientserver">
+    <userDocumentation author="jonat" description=""/>
+    <extensions>
+     <Graph>
+      <pos x="0" y="0"/>
+      <nodes>
+       <element key="13e3e44b-e9cc-4251-acf5-13e5e9846324" typeGUID="12bdfa06-ba95-4e48-bb2d-bb48a7080abc">
+        <value guid="13e3e44b-e9cc-4251-acf5-13e5e9846324">
+         <pos x="0" y="0"/>
+        </value>
+       </element>
+      </nodes>
+      <links />
+     </Graph>
+    </extensions>
+    <children />
+   </element>
+   <element elementType="SignalReceiver" guid="2f0837f9-20ae-48c5-9507-98f114e5930b" name="SignalGraph" Schematyc::EMPEnv="clientserver" type="Universal" signalGUID="">
+    <userDocumentation author="jonat" description=""/>
+    <extensions>
+     <Graph>
+      <pos x="0" y="0"/>
+      <nodes>
+       <element key="90532698-d36d-4435-a750-985195c4f91e" typeGUID="ad2aee64-0a60-4469-8ec7-38b4b720d30c">
+        <value guid="90532698-d36d-4435-a750-985195c4f91e" objectGUID="">
+         <pos x="0" y="200"/>
+         <signalId domain="Env" guid="b2561caa-0753-458b-a91f-e8e38b0f0cdf"/>
+        </value>
+       </element>
+       <element key="590480cf-029a-4f77-8319-9a6fe7ed9502" typeGUID="ad2aee64-0a60-4469-8ec7-38b4b720d30c">
+        <value guid="590480cf-029a-4f77-8319-9a6fe7ed9502" objectGUID="">
+         <pos x="0" y="0"/>
+         <signalId domain="Env" guid="a9279137-7c66-491d-b9a0-8752c24c8979"/>
+        </value>
+       </element>
+       <element key="bdf36dea-d1c6-4f95-b527-35b95d7ab678" typeGUID="ad2aee64-0a60-4469-8ec7-38b4b720d30c">
+        <value guid="bdf36dea-d1c6-4f95-b527-35b95d7ab678" objectGUID="">
+         <pos x="0" y="100"/>
+         <signalId domain="Env" guid="52ad5add-7781-429b-b4a9-0cb6c905e353"/>
+        </value>
+       </element>
+      </nodes>
+      <links />
+     </Graph>
+    </extensions>
+    <children />
+   </element>
+   <element elementType="Base" guid="af016dce-ac0e-48be-ab1c-f0f66441b074" name="Base [Entity]" Schematyc::EMPEnv="clientserver">
+    <classId domain="Env" guid="be845278-0dd2-409f-b8be-97895607c256"/>
+    <envClassProperties icon="%EDITOR%/objecticons/schematyc.bmp" bHideInEditor="false" bTriggerAreas="true" bCreatePerClient="false"/>
+    <extensions />
+    <children>
+     <element elementType="ComponentInstance" guid="0838f16a-ffa7-42f9-bf14-f2786474fcef" name="Entity" Schematyc::EMPEnv="clientserver" accessor="Private" typeGUID="e88093df-904f-4c52-af38-911e26777cdc">
+      <properties />
+      <extensions />
+      <children />
+     </element>
+    </children>
+   </element>
+   <element elementType="ComponentInstance" guid="0c107fbd-a598-4323-a220-606b76b5e1b2" name="Rigidbody" Schematyc::EMPEnv="clientserver" accessor="Private" typeGUID="912c6ce8-56f7-4ffa-9134-f98d4e307bd6">
+    <properties Networked="false" EnabledByDefault="true" Resting="false" Type="Rigid" SendCollisionSignal="false">
+     <Buoyancy Damping="0" Density="1000" Resistance="1000"/>
+     <Simulation MaxTimeStep="0.02" SleepSpeed="0.039999999" Damping="0"/>
+    </properties>
+    <extensions />
+    <children />
+   </element>
+   <element elementType="ComponentInstance" guid="d5eba365-0bb6-4d98-8715-36e1b8e6edaa" name="Mesh" Schematyc::EMPEnv="clientserver" accessor="Private" typeGUID="6ddd0033-6aaa-4b71-b8ea-108258205e29">
+    <transform>
+     <translation>
+      <position>
+       <element element="0"/>
+       <element element="0"/>
+       <element element="0"/>
+      </position>
+     </translation>
+     <rotation x="0" y="-0" z="0"/>
+     <scale>
+      <element element="1"/>
+      <element element="1"/>
+      <element element="1"/>
+     </scale>
+    </transform>
+    <properties Type="RenderAndCollider" FilePath="%ENGINE%/EngineAssets/Objects/primitive_sphere.cgf" Material="">
+     <Render ShadowSpec="Low" IgnoreVisArea="false" IgnoreTerrainLayerBlend="false" IgnoreDecalBlend="false" ViewDistRatio="100" LODDistance="100" GIMode="None"/>
+     <Physics WeightType="EWeightType::Mass" Density="9.9999997e-05" Mass="10"/>
+    </properties>
+    <extensions />
+    <children />
+   </element>
+  </children>
+ </root>
+</CrySchematyc>

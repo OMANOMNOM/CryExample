@@ -5379,6 +5379,18 @@
 			"dependencies": [ ]
 		},
 		{
+			"type": "SchematycEntity",
+			"guid": "abda7a69-3e2f-8802-fec0-3b1969afc2ed",
+			"name": "testentity",
+			"timestamp": 1705097957,
+			"files": [ "testentity.schematyc_ent" ],
+			"workFiles": [ ],
+			"source": "",
+			"metadata": "testentity.schematyc_ent.cryasset",
+			"details": [ ],
+			"dependencies": [ ]
+		},
+		{
 			"type": "Texture",
 			"guid": "71ef1138-c48b-93ee-93ea-1c2c3e1ec2ec",
 			"name": "environmentprobe1_cm",

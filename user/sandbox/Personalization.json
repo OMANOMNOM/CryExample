@@ -2,7 +2,9 @@
     "AssetFolderModel": {
         "AddedFolders": [
             "objects",
-            "objects/schematyc"
+            "objects/schematyc",
+            "new folder",
+            "schematyc"
         ]
     },
     "CAssetPicker": {
@@ -325,6 +327,8 @@
     },
     "Schematyc Editor": {
         "Recent Files": [
+            "schematyc/simplyphysicsball.schematyc_ent.cryasset",
+            "testentity.schematyc_ent.cryasset",
             "objects/schematyc/schematycfunctionexample.schematyc_ent.cryasset",
             "objects/schematyc/schematycsignalexample.schematyc_ent.cryasset"
         ]
