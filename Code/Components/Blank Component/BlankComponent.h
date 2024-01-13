@@ -25,4 +25,6 @@ public:
 		desc.SetEditorCategory("CryExample Entity");
 		desc.SetLabel("BlankComponent");
 	}
+
+	int specialNumber;
 };
