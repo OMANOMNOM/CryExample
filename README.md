@@ -32,8 +32,9 @@ Todo
 - Blank Game Objects
 - Timers
 - Events
-- Physics (todo)
+- Physics Collision
 - Schematyc Integrations with C++
+- Console Varaibles
 - Shaders (todo)
 
 
