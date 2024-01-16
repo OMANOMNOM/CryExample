@@ -26,5 +26,4 @@ public:
 		desc.SetLabel("BlankComponent");
 	}
 
-	int specialNumber;
 };

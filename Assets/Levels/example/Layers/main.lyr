@@ -1,18 +1,10 @@
 <ObjectLayer>
- <Layer Name="Main" FullName="Main" GUID="7416d038-b037-6b0f-9d2c-5ccaf3a77d94" Hidden="0" Frozen="0" Expanded="0" Type="0" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1" Color="4671303" Timestamp="1704833599">
+ <Layer Name="Main" FullName="Main" GUID="7416d038-b037-6b0f-9d2c-5ccaf3a77d94" Hidden="0" Frozen="0" Expanded="0" Type="0" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1" Color="4671303" Timestamp="1705427507">
   <LayerObjects>
-   <Object Type="EntityWithComponent" Layer="Main" LayerGUID="7416d038-b037-6b0f-9d2c-5ccaf3a77d94" Id="1e40d008-19c7-5ddd-4b74-a5c9476aa4bf" Name="Entity-1" Pos="512.38629,518.56842,31.999756" Rotate="1,0,0,0" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="Entity" HasEntity="1">
+   <Object Type="EntityWithComponent" Layer="Main" LayerGUID="7416d038-b037-6b0f-9d2c-5ccaf3a77d94" Id="7a396b73-41a8-6bf3-621d-a21085e4c3a6" Name="Entity-1" Pos="508.80273,513.68225,31.999756" Rotate="1,0,0,0" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="Entity" HasEntity="1">
     <Properties />
     <Components>
-     <Component CryXmlVersion="2" TypeGUID="2b4e3ded-948d-44f6-afcc-0f3b8934793a" TypeName="CSimpleComponentProperty" GUID="43243a6c-e224-46f8-3bc1-46df172e075d" Name="" UserAdded="true">
-      <properties ImportantValue="0"/>
-     </Component>
-    </Components>
-   </Object>
-   <Object Type="EntityWithComponent" Layer="Main" LayerGUID="7416d038-b037-6b0f-9d2c-5ccaf3a77d94" Id="9d22bd93-c00f-d2d3-92f1-88512063e00e" Name="Entity-2" Pos="508.98514,520.59613,31.999756" Rotate="1,0,0,0" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="Entity" HasEntity="1">
-    <Properties />
-    <Components>
-     <Component CryXmlVersion="2" TypeGUID="3fa6c213-274a-40ac-9947-94deecf2645b" TypeName="CSchematycFunction" GUID="980a1873-bf10-9b50-62f3-85b8959b7d7b" Name="" UserAdded="true">
+     <Component CryXmlVersion="2" TypeGUID="c24851a7-619f-469f-a1bb-f2c0330e5f52" TypeName="CRaycasting" GUID="823360c0-489e-0efd-c1f9-10fed928e717" Name="" UserAdded="true">
       <properties />
      </Component>
     </Components>
