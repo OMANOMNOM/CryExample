@@ -2,8 +2,8 @@
 #include "StdAfx.h"
 #include "GamePlugin.h"
 
-#include "Components/Player.h"
-#include "Components/SpawnPoint.h"
+#include "Depreicated/Player.h"
+#include "Depreicated/SpawnPoint.h"
 #include <CryEntitySystem/IEntityClass.h>
 #include <IGameObjectSystem.h>
 #include <IGameObject.h>
