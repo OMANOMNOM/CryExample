@@ -36,8 +36,8 @@ Every feature has been placed into its own Entity component (gameobject) meaning
 - Physics 
   - Physics Collision
   - Raycasts
-  - Schematyc
-- Signals
+- Schematyc
+  - Signals
   - Functions
   - Properties
 - Editor 
