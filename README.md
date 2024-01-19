@@ -25,16 +25,27 @@ You're going to need to already have downloaded and installed CRYENGINE AND inst
 
 ## Using ExampleEntities
 
-Todo
+Every feature has been placed into its own Entity component (gameobject) meaning everything is broken up into their own separate files. It also means any feature can be placed into the game editor to see how it works OR be easily modified. 
 
 ## Current Topics
 
-- Blank Game Objects
-- Timers
-- Events
-- Physics Collision
-- Schematyc Integrations with C++
-- Console Varaibles
+- Entity Component 
+-   Minimal Entity Component
+-   Timers
+-   Events
+-   Slots (todo)
+- Physics 
+-   Physics Collision
+-   Raycasts
+- Schematyc
+-   Signals
+-   Functions
+-   Properties
+- Editor 
+-   Console Varaibles
+-   Console Commands
+- Animation
+-   (todo)
 - Shaders (todo)
 
 
