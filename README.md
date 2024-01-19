@@ -29,23 +29,23 @@ Every feature has been placed into its own Entity component (gameobject) meaning
 
 ## Current Topics
 
-- Entity Component 
--   Minimal Entity Component
--   Timers
--   Events
--   Slots (todo)
+- Entity Component
+  - Minimal Entity Component
+  - Timers
+  - Events
+  - Slots (todo)
 - Physics 
--   Physics Collision
--   Raycasts
-- Schematyc
--   Signals
--   Functions
--   Properties
+  - Physics Collision
+  - Raycasts
+  - Schematyc
+- Signals
+  - Functions
+  - Properties
 - Editor 
--   Console Varaibles
--   Console Commands
+  - Console Varaibles
+  - Console Commands
 - Animation
--   (todo)
+  - (todo)
 - Shaders (todo)
 
 
