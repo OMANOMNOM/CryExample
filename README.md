@@ -49,3 +49,11 @@ Every feature has been placed into its own Entity component (gameobject) meaning
 - Shaders (todo)
 
 
+## Other Great resources
+- Projects
+  - [Snake game](https://github.com/afrostalin/Snake-Game)
+- Misc
+  - https://github.com/johnsdav/CryIgnore
+  - https://github.com/LeonidasWhite/BCRYExporter  
+
+
