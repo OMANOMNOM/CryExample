@@ -11,19 +11,19 @@ static void RegisterConsoleVaraible(Schematyc::IEnvRegistrar& registrar)
 {
 	Schematyc::CEnvRegistrationScope scope = registrar.Scope(IEntity::GetEntityScopeGUID());
 	{
-		Schematyc::CEnvRegistrationScope componentScope = scope.Register(SCHEMATYC_MAKE_ENV_COMPONENT(CConsoleVaraible));
+		Schematyc::CEnvRegistrationScope componentScope = scope.Register(SCHEMATYC_MAKE_ENV_COMPONENT(CConsoleVaraibleExample));
 	}
 }
 
 
 CRY_STATIC_AUTO_REGISTER_FUNCTION(&RegisterConsoleVaraible)
 
-CConsoleVaraible::~CConsoleVaraible()
+CConsoleVaraibleExample::~CConsoleVaraibleExample()
 {
 	gEnv->pConsole->UnregisterVariable("specialNumber"); // REMEMBER TO REMOVE VARAIBLE IN DESTRUCTOR!!!!!!!
 }
 
-CConsoleVaraible::CConsoleVaraible()	:
+CConsoleVaraibleExample::CConsoleVaraibleExample()	:
 	specialNumber(42)
 {
 	REGISTER_CVAR2("specialNumber", &specialNumber, specialNumber, VF_NULL, "This is a number we can change with console varaibles");

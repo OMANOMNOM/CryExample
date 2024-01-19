@@ -12,7 +12,7 @@ static void RegisterConsoleCommands(Schematyc::IEnvRegistrar& registrar)
 {
 	Schematyc::CEnvRegistrationScope scope = registrar.Scope(IEntity::GetEntityScopeGUID());
 	{
-		Schematyc::CEnvRegistrationScope componentScope = scope.Register(SCHEMATYC_MAKE_ENV_COMPONENT(CConsoleCommands));
+		Schematyc::CEnvRegistrationScope componentScope = scope.Register(SCHEMATYC_MAKE_ENV_COMPONENT(CConsoleCommandsExample));
 	}
 }
 
@@ -42,12 +42,12 @@ static void MyCommand(IConsoleCmdArgs* pArgs)
 	}
 }
 
-void CConsoleCommands::Initialize()
+void CConsoleCommandsExample::Initialize()
 {
 	RegisterCommand();
 }
 
-void CConsoleCommands::RegisterCommand()
+void CConsoleCommandsExample::RegisterCommand()
 {
 	// Specify bit flags that define the CCommand's behavior, see EVarFlags
 	const int variableFlags = VF_NULL;
@@ -56,7 +56,7 @@ void CConsoleCommands::RegisterCommand()
 	REGISTER_COMMAND("myCommands", MyCommand, variableFlags, "Executes the MyCommand function!");
 }
 
-void CConsoleCommands::UnregisterCommand()
+void CConsoleCommandsExample::UnregisterCommand()
 {
 	// Make sure to unregister the command once we are done
 	gEnv->pConsole->RemoveCommand("myCommand");

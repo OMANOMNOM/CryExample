@@ -10,7 +10,7 @@ static void RegisterTimerComponent(Schematyc::IEnvRegistrar& registrar)
 {
 	Schematyc::CEnvRegistrationScope scope = registrar.Scope(IEntity::GetEntityScopeGUID());
 	{
-		Schematyc::CEnvRegistrationScope componentScope = scope.Register(SCHEMATYC_MAKE_ENV_COMPONENT(CTimerComponent));
+		Schematyc::CEnvRegistrationScope componentScope = scope.Register(SCHEMATYC_MAKE_ENV_COMPONENT(CTimerComponentExample));
 	}
 }
 
@@ -27,7 +27,7 @@ CRY_STATIC_AUTO_REGISTER_FUNCTION(&RegisterTimerComponent)
 
 
 // Check for TimerExpired Event. see EventExample on how events work. 
-Cry::Entity::EventFlags CTimerComponent::GetEventMask() const
+Cry::Entity::EventFlags CTimerComponentExample::GetEventMask() const
 {
 	return
 		Cry::Entity::EEvent::GameplayStarted | // We're using gameplaystarted to start our timer. 
@@ -35,7 +35,7 @@ Cry::Entity::EventFlags CTimerComponent::GetEventMask() const
 }
 
 // Here is where the subscribed to events are handled. 
-void CTimerComponent::ProcessEvent(const SEntityEvent& event)
+void CTimerComponentExample::ProcessEvent(const SEntityEvent& event)
 {
 	switch (event.event)
 	{

@@ -16,13 +16,13 @@
 //#include <CrySchematyc/Utils/SharedString.h>
 
 // Makes the component 'editable' within the CE editor. 
-static void RegisterBlankComponent(Schematyc::IEnvRegistrar& registrar)
+static void RegisterBlankComponentExample(Schematyc::IEnvRegistrar& registrar)
 {
 	Schematyc::CEnvRegistrationScope scope = registrar.Scope(IEntity::GetEntityScopeGUID());
 	{
-		Schematyc::CEnvRegistrationScope componentScope = scope.Register(SCHEMATYC_MAKE_ENV_COMPONENT(CBlankComponent));
+		Schematyc::CEnvRegistrationScope componentScope = scope.Register(SCHEMATYC_MAKE_ENV_COMPONENT(CBlankComponentExample));
 	}
 }
 
 
-CRY_STATIC_AUTO_REGISTER_FUNCTION(&RegisterBlankComponent)
+CRY_STATIC_AUTO_REGISTER_FUNCTION(&RegisterBlankComponentExample)

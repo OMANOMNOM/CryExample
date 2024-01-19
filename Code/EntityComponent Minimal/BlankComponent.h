@@ -8,16 +8,16 @@
 
 #include <CryEntitySystem/IEntitySystem.h>
 
-class CBlankComponent final : public IEntityComponent // Best practice: Classes start with a 'C'
+class CBlankComponentExample final : public IEntityComponent // Best practice: Classes start with a 'C'
 
 {
 public:
 	// Provide a virtual destructor, ensuring correct destruction of IEntityComponent members
-	virtual ~CBlankComponent() = default;
+	virtual ~CBlankComponentExample() = default;
 
 	// Reflect type to set a unique identifier for this component
 	// and provide additional information to expose it in the sandbox
-	static void ReflectType(Schematyc::CTypeDesc<CBlankComponent>& desc)
+	static void ReflectType(Schematyc::CTypeDesc<CBlankComponentExample>& desc)
 	{
 		// Provide a globally unique identifier for the component, can be generated in Visual Studio via Tools -> Create GUID (in registry format).
 		desc.SetGUID("{2AEF0B0A-B12E-4286-9B7B-A032277F93CA}"_cry_guid);

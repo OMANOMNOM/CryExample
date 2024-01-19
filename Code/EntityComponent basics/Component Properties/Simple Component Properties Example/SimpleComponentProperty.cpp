@@ -6,7 +6,7 @@
 #include <CryCore/StaticInstanceList.h>
 
 // Makes the component 'editable' within the CE editor. 
-static void RegisterSimpleComponentProperty(Schematyc::IEnvRegistrar& registrar)
+static void RegisterSimpleComponentPropertyExample(Schematyc::IEnvRegistrar& registrar)
 {
 	Schematyc::CEnvRegistrationScope scope = registrar.Scope(IEntity::GetEntityScopeGUID());
 	{
@@ -14,7 +14,7 @@ static void RegisterSimpleComponentProperty(Schematyc::IEnvRegistrar& registrar)
 	}
 }
 
-CRY_STATIC_AUTO_REGISTER_FUNCTION(&RegisterSimpleComponentProperty)
+CRY_STATIC_AUTO_REGISTER_FUNCTION(&RegisterSimpleComponentPropertyExample)
 
 //
 //	------------------------------ Event Stuff --------------------------------------------

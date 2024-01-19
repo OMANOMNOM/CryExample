@@ -9,16 +9,16 @@
 #include <CryEntitySystem/IEntitySystem.h>
 #include <CryEntitySystem/IEntityComponent.h>
 
-class CTimerComponent final : public IEntityComponent // Best practice: Classes start with a 'C'
+class CTimerComponentExample final : public IEntityComponent // Best practice: Classes start with a 'C'
 
 {
 public:
 	// Provide a virtual destructor, ensuring correct destruction of IEntityComponent members
-	virtual ~CTimerComponent() = default;
+	virtual ~CTimerComponentExample() = default;
 
 	// Reflect type to set a unique identifier for this component
 	// and provide additional information to expose it in the sandbox
-	static void ReflectType(Schematyc::CTypeDesc<CTimerComponent>& desc)
+	static void ReflectType(Schematyc::CTypeDesc<CTimerComponentExample>& desc)
 	{
 		// Provide a globally unique identifier for the component, can be generated in Visual Studio via Tools -> Create GUID (in registry format).
 		desc.SetGUID("{B724A4FB-1A18-4601-99A0-9118BA74CA95}"_cry_guid);

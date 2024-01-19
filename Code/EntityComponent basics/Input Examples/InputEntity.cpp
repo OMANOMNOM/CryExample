@@ -5,18 +5,18 @@
 #include <CrySchematyc/Env/Elements/EnvComponent.h>
 #include <CryCore/StaticInstanceList.h>
 
-static void RegisterInputEntity(Schematyc::IEnvRegistrar& registrar)
+static void RegisterInputComponentExample(Schematyc::IEnvRegistrar& registrar)
 {
 	Schematyc::CEnvRegistrationScope scope = registrar.Scope(IEntity::GetEntityScopeGUID());
 	{
-		Schematyc::CEnvRegistrationScope componentScope = scope.Register(SCHEMATYC_MAKE_ENV_COMPONENT(CInputEntity));
+		Schematyc::CEnvRegistrationScope componentScope = scope.Register(SCHEMATYC_MAKE_ENV_COMPONENT(CInputEntityExample));
 	}
 }
 
 
-CRY_STATIC_AUTO_REGISTER_FUNCTION(&RegisterInputEntity)
+CRY_STATIC_AUTO_REGISTER_FUNCTION(&RegisterInputComponentExample)
 
-void CInputEntity::Initialize()
+void CInputEntityExample::Initialize()
 {
 	// Create the Input component
 	m_pInputComponent = m_pEntity->GetOrCreateComponent<Cry::DefaultComponents::CInputComponent>();

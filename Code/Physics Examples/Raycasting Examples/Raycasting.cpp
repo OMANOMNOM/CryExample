@@ -21,7 +21,7 @@ static void RegisterRaycastingComponent(Schematyc::IEnvRegistrar& registrar)
 {
 	Schematyc::CEnvRegistrationScope scope = registrar.Scope(IEntity::GetEntityScopeGUID());
 	{
-		Schematyc::CEnvRegistrationScope componentScope = scope.Register(SCHEMATYC_MAKE_ENV_COMPONENT(CRaycasting));
+		Schematyc::CEnvRegistrationScope componentScope = scope.Register(SCHEMATYC_MAKE_ENV_COMPONENT(CRaycastingExample));
 	}
 }
 
@@ -29,7 +29,7 @@ static void RegisterRaycastingComponent(Schematyc::IEnvRegistrar& registrar)
 CRY_STATIC_AUTO_REGISTER_FUNCTION(&RegisterRaycastingComponent)
 
 
-Cry::Entity::EventFlags CRaycasting::GetEventMask() const
+Cry::Entity::EventFlags CRaycastingExample::GetEventMask() const
 {
 	return
 		Cry::Entity::EEvent::GameplayStarted |
@@ -37,7 +37,7 @@ Cry::Entity::EventFlags CRaycasting::GetEventMask() const
 		Cry::Entity::EEvent::Reset;
 }
 
-void CRaycasting::raycast()
+void CRaycastingExample::raycast()
 {
 	// Store the half render size, used to calculate a direction that points outwards from the camera
 	const float halfRenderWidth = static_cast<float>(gEnv->pRenderer->GetWidth()) * 0.5f;
@@ -80,7 +80,7 @@ void CRaycasting::raycast()
 }
 
 // Here is where the subscribed to events are handled. 
-void CRaycasting::ProcessEvent(const SEntityEvent& event)
+void CRaycastingExample::ProcessEvent(const SEntityEvent& event)
 {
 	switch (event.event)
 	{

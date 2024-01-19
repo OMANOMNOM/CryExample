@@ -12,14 +12,14 @@
 #include <CryEntitySystem/IEntityComponent.h>
 
 
-class CEntityEventsComponent final : public IEntityComponent // Best practice: Classes start with a 'C'
+class CEntityEventsComponentExample final : public IEntityComponent // Best practice: Classes start with a 'C'
 
 {
 	// ----------- Basic Entity creation code ----------------
 public:
-	virtual ~CEntityEventsComponent() = default;
+	virtual ~CEntityEventsComponentExample() = default;
 
-	static void ReflectType(Schematyc::CTypeDesc<CEntityEventsComponent>& desc)
+	static void ReflectType(Schematyc::CTypeDesc<CEntityEventsComponentExample>& desc)
 	{
 		desc.SetGUID("{174B2D8F-2B15-4BF1-8091-505049307B39}"_cry_guid);
 		desc.SetEditorCategory("CryExample EntityComponent basics");

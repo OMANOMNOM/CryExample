@@ -6,15 +6,15 @@
 #include <CryCore/StaticInstanceList.h>
 
 // Makes the component 'editable' within the CE editor. 
-static void RegisterEntityEventsComponent(Schematyc::IEnvRegistrar& registrar)
+static void RegisterEntityEventsComponentExample(Schematyc::IEnvRegistrar& registrar)
 {
 	Schematyc::CEnvRegistrationScope scope = registrar.Scope(IEntity::GetEntityScopeGUID());
 	{
-		Schematyc::CEnvRegistrationScope componentScope = scope.Register(SCHEMATYC_MAKE_ENV_COMPONENT(CEntityEventsComponent));
+		Schematyc::CEnvRegistrationScope componentScope = scope.Register(SCHEMATYC_MAKE_ENV_COMPONENT(CEntityEventsComponentExample));
 	}
 }
 
-CRY_STATIC_AUTO_REGISTER_FUNCTION(&RegisterEntityEventsComponent)
+CRY_STATIC_AUTO_REGISTER_FUNCTION(&RegisterEntityEventsComponentExample)
 
 //
 //	------------------------------ Event Stuff --------------------------------------------
@@ -25,7 +25,7 @@ CRY_STATIC_AUTO_REGISTER_FUNCTION(&RegisterEntityEventsComponent)
 // This funciton is called component creation, but you can change which events are subscribed later.
 // Look at EEvent to see what events are available
 
-Cry::Entity::EventFlags CEntityEventsComponent::GetEventMask() const
+Cry::Entity::EventFlags CEntityEventsComponentExample::GetEventMask() const
 {
 	return
 		Cry::Entity::EEvent::BecomeLocalPlayer |
@@ -34,7 +34,7 @@ Cry::Entity::EventFlags CEntityEventsComponent::GetEventMask() const
 }
 
 // Here is where the subscribed to events are handled. 
-void CEntityEventsComponent::ProcessEvent(const SEntityEvent& event)
+void CEntityEventsComponentExample::ProcessEvent(const SEntityEvent& event)
 {
 	switch (event.event)
 	{

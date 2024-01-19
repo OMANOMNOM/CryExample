@@ -7,7 +7,7 @@
 
 
 // Makes the component 'editable' within the CE editor. 
-static void RegisterCollisionComponent(Schematyc::IEnvRegistrar& registrar)
+static void RegisterCollisionComponentExample(Schematyc::IEnvRegistrar& registrar)
 {
 	Schematyc::CEnvRegistrationScope scope = registrar.Scope(IEntity::GetEntityScopeGUID());
 	{
@@ -16,7 +16,7 @@ static void RegisterCollisionComponent(Schematyc::IEnvRegistrar& registrar)
 }
 
 
-CRY_STATIC_AUTO_REGISTER_FUNCTION(&RegisterCollisionComponent)
+CRY_STATIC_AUTO_REGISTER_FUNCTION(&RegisterCollisionComponentExample)
 
 void CCollisionComponent::Initialize()
 {

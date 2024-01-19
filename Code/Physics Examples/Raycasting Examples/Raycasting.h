@@ -1,20 +1,17 @@
 #pragma once
-/*
-*/
-#pragma once
 
 #include <CryEntitySystem/IEntitySystem.h>
 
-class CRaycasting final : public IEntityComponent // Best practice: Classes start with a 'C'
+class CRaycastingExample final : public IEntityComponent // Best practice: Classes start with a 'C'
 
 {
 public:
 	// Provide a virtual destructor, ensuring correct destruction of IEntityComponent members
-	virtual ~CRaycasting() = default;
+	virtual ~CRaycastingExample() = default;
 
 	// Reflect type to set a unique identifier for this component
 	// and provide additional information to expose it in the sandbox
-	static void ReflectType(Schematyc::CTypeDesc<CRaycasting>& desc)
+	static void ReflectType(Schematyc::CTypeDesc<CRaycastingExample>& desc)
 	{
 		// Provide a globally unique identifier for the component, can be generated in Visual Studio via Tools -> Create GUID (in registry format).
 		desc.SetGUID("{C24851A7-619F-469F-A1BB-F2C0330E5F52}"_cry_guid);

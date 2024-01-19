@@ -5,16 +5,16 @@
 
 
 // Names this CInputEntity to avoid confusion with the CInputComponent
-class CInputEntity final : public IEntityComponent // Best practice: Classes start with a 'C'
+class CInputEntityExample final : public IEntityComponent // Best practice: Classes start with a 'C'
 
 {
 public:
 	// Provide a virtual destructor, ensuring correct destruction of IEntityComponent members
-	virtual ~CInputEntity() = default;
+	virtual ~CInputEntityExample() = default;
 	virtual void Initialize() override;
 	// Reflect type to set a unique identifier for this component
 	// and provide additional information to expose it in the sandbox
-	static void ReflectType(Schematyc::CTypeDesc<CInputEntity>& desc)
+	static void ReflectType(Schematyc::CTypeDesc<CInputEntityExample>& desc)
 	{
 		// Provide a globally unique identifier for the component, can be generated in Visual Studio via Tools -> Create GUID (in registry format).
 		desc.SetGUID("{E6D7CAEC-33E9-448C-A2CF-BE3C0C844FBA}"_cry_guid);
