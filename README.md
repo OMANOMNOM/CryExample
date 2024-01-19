@@ -21,7 +21,6 @@ You're going to need to already have downloaded and installed CRYENGINE AND inst
 4. In the Solutions panel (right side of screen) Right click Editor and click "Set as startup Project"
 5. Press CTRL+Shift+B to build the solution.
 6. Fianlly press F5 to load up the editor and see the components at work.
-7. All the demonstation code with within the project file is the soluiton panel (right hand side)
 
 ## Using ExampleEntities
 
