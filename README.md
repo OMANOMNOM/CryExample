@@ -20,7 +20,7 @@ You'll need to install **CRYENGINE**, **Visual Studio** & **Microsoft C++ tools*
 3. Navigate to "Solutions->Win64" and open up "Game.sln" (this should open Visual Studio).
 4. In the Solution panel (right side of screen) right click Editor and select "Set as startup Project".
 5. Press "CTRL + Shift + B" to build the solution.
-6. Fianlly, press F5 to load up the editor and see the components at work.🕺
+6. Fianlly, press F5 to load up the editor and see the components at work!🕺
 
 ## Using ExampleEntities
 
